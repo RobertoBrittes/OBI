@@ -31,7 +31,6 @@ public class ValesPicos {
                 valePico[1] = "pico";
             } else if (altura[i] < altura[i - 1]) {
                 valePico[1] = "vale";
-
             } else {
                 seguePadrao = 0;
                 break;
