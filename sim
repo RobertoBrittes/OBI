@@ -1,0 +1,13 @@
+  GNU nano 7.2                                                                          meuscript.sh *                                                                                  
+#!/bin/bash
+
+read -p "Entre com seu ano e mês de nascimento: " nasc mes_nasc
+idade=$((2025*12-nasc*12+mes_nasc))
+idade_anos=$((idade/12))
+mes=$((6-mes_nasc))
+if[ ${mes} -le 0 ]; then
+idade_anos=(idade_anos-1)
+mes=((12-mes*-1))
+fi
+echo ${idadeanos} anos e ${mes} meses
+
